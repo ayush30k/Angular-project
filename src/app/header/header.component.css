@@ -1,0 +1,10 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-list{
+    min-width: 16vw;
+   min-height:80.2vh;
+  
+  }
+  
+  

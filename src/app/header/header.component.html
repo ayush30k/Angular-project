@@ -1,0 +1,44 @@
+
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggle()">
+        <mat-icon >menu</mat-icon>
+      </button>
+      <span routerLink="/home" style="cursor: pointer;">Itinfinity </span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav [(opened)]="opened">
+        <mat-nav-list class="mat-list" (click)="toggle()">
+            <a mat-list-item class="list-items" routerLink="/home">
+                <mat-icon>perm_identity</mat-icon>&nbsp;Profile
+            </a>
+            <a mat-list-item class="list-items" routerLink="/projects">
+                <mat-icon>work</mat-icon>&nbsp;Projects
+            </a>
+            <a mat-list-item class="list-items" routerLink="/skills" >
+                <mat-icon>lightbulb</mat-icon>&nbsp;Skills
+            </a>
+            <a mat-list-item class="list-items" routerLink="/resume">
+                <mat-icon>document_scanner</mat-icon>&nbsp;Resume
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <!-- [ngClass]="{'display-area-shrink':drawerOpen}"   this is for shrinking the screen  -->
+    <mat-sidenav-content>
+        <div style="min-height:91.3vh;  background-image: linear-gradient(360deg, #f2ffc7, transparent)" >
+          
+            <router-outlet  ></router-outlet>
+           
+           
+     
+        </div>
+        
+    </mat-sidenav-content>
+  </mat-sidenav-container>
