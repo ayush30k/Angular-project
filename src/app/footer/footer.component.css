@@ -1,0 +1,25 @@
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 7.5px 0; /* Add padding for spacing */
+    text-align: center;
+    height: auto;
+  }
+  .footer-content{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
