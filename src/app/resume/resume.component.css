@@ -1,0 +1,19 @@
+.pdfViewer{
+    height: 144vh;
+   
+}
+.pdfViewer pdf-viewer{
+    height: auto;
+    width: auto;
+}
+@media (max-width:800px) {
+    .pdfViewer{
+        height: 144vh;
+        width: 90vw;
+       
+    }
+    .pdfViewer pdf-viewer{
+        height: auto;
+        width: 90vw;
+    }
+}

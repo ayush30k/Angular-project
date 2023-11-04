@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import {MatModule} from './AppModule/MatModule'
 
 
+
 ;
 
 @NgModule({
@@ -23,7 +24,7 @@ import {MatModule} from './AppModule/MatModule'
     SkillsComponent,
     ResumeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

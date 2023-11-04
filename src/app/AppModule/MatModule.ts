@@ -6,6 +6,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 
 
 
@@ -16,7 +19,10 @@ const mod=[
     MatSidenavModule,
     MatListModule,
     LoadingBarRouterModule,
-    LoadingBarHttpClientModule
+    LoadingBarHttpClientModule,
+    NgxExtendedPdfViewerModule,
+    PdfViewerModule
+    
 
 
 ]
