@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap');
+
+.main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.profile-display{
+    display: flex;
+    flex-direction: column;
+    width: 80vw; /* Set the width as needed */
+    height: auto; /* Set the height as needed */
+    padding: 2px;
+    background-color: #fff; /* Set the background color of the div */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    border-radius: 10px; /* Optionally, add rounded corners for a softer look */
+    margin: 10px; /* Add margin to create space between elements */
+}
+.banner img{
+    width: 80vw;
+    border-radius: 10px;
+    height: 38vh;
+}
+
+.display-pic img{
+    height: 30vh;
+    border-radius: 300px;
+    margin-top: -150px;
+    margin-left: 30px;
+    border: 6px solid white;
+}
+.user-details{
+    display: flex;
+    justify-content: space-between;
+}
+.user-details{
+    margin-top: 10px;
+    margin-left: 39px;
+    margin-bottom: 10px;
+}
+.user-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.user-skills{
+    font-size: 'Raleway';
+    font-weight: 350;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.user-location{
+  
+    margin-top: 10px;
+    color:#666666;
+    font-size: 14px;
+}
+.company{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.company-details{
+    display: flex;
+    justify-content: left;
+
+}
+.user-location a{
+    font-weight: 500;
+    margin-left: 5px;
+    color:#5B0888;
+    text-decoration: none;
+}
+.user-location a:hover{
+   text-decoration: underline;
+}
+.education-details{
+    display: flex;
+    justify-content: left;
+}
+.company{
+    margin-right: 10vw;
+}
+.c-logo{
+   
+    margin-right: 10px;
+}
+.c-details{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.e-details{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.e-logo{
+    
+    margin-right: 10px;
+}
+.c-logo img{
+    height: 30px;
+    width: 34px;
+}
+.e-logo img{
+    height: 30px;
+    width: 34px;
+}
+@media (max-width:912px) {
+    .main{
+        width: auto;
+       }
+    .profile-display{
+        width:95vw;
+        height: auto;
+    }
+    .banner img{
+        width: 95vw;
+        border-radius: 10px;
+        height: 15vh;
+    }
+    .display-pic img{
+        height: 18vh;
+        border-radius: 300px;
+        margin-top: -80px;
+        margin-left: 20px;
+        border: 6px solid white;
+    }
+    .user-details{
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-skills{
+        margin-top: 11px;
+        margin-left: 2px;
+    }
+    .user-location{
+        margin-top: 5px;
+    }
+    .company{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .c-logo{
+        display: none;
+    }
+    .c-details{
+        margin-bottom: 4px;
+    }
+   
+    .e-logo{
+        display: none;
+    }
+}
