@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
   constructor() { }
+  originalSize=0
   pdfSrc:string='assets/AyushResume.pdf'
   ngOnInit(): void {
-  }
+this.originalSize=window.innerWidth
 
+}
 }

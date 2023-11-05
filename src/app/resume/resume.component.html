@@ -1,5 +1,22 @@
-<div class="pdfViewer">
-    <pdf-viewer [src]="pdfSrc" ></pdf-viewer>
+    <div class="main">
+        <div class="resume-title"> 
+            <div class="view">
+                <a [href]="pdfSrc" download="AyushResume.pdf"> <button>Download Resume</button></a>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+<div class="pdfViewer" >
+    
+    <pdf-viewer  [src]="pdfSrc" [original-size]="true" *ngIf="originalSize>800"></pdf-viewer>
+    <pdf-viewer  [src]="pdfSrc" [original-size]="false" *ngIf="originalSize<800" ></pdf-viewer>
+
 </div>
+
+
+
 
 
