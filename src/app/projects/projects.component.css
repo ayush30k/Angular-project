@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap');
+
+.main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 80vw; /* Set the width as needed */
+    height: auto; /* Set the height as needed */
+    padding: 2px;
+    background-color: #fff; /* Set the background color of the div */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    border-radius: 10px; /* Optionally, add rounded corners for a softer look */
+    margin: 10px; /* Add margin to create space between elements */
+}
+.title{
+    margin-top: 20px;
+    font-size: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+   
+    margin-left: 20px;
+}
+.experience{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.e-logo{
+    
+    margin-left:20px;
+    margin-right: 10px;
+    margin-bottom: auto;
+}
+.e-logo img{
+    height: 50px;
+}
+.details-block{
+    display: flex;
+    flex-direction: column;
+}
+.e-details{
+    margin-bottom: 25px;
+}
+.c-name{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.c-tenure{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.c-location{
+    font-size: 14px;
+    color: rgb(91, 91, 91);
+  
+}
+.c-grade{
+    font-size: 14px;
+    color: rgb(91, 91, 91);
+    margin-top: 15px;
+}
+.desigination{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.jobtype{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.duration{
+    font-size: 14px;
+    color: rgb(91, 91, 91);
+    margin-bottom: 10px;
+}
+.desc{
+     font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.skills{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.logo-block{
+    display: flex;
+    flex-direction: column;
+}
+.c-button{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+.c-button button{
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    padding: 5px;
+    width: 170px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #fff;
+    cursor: pointer;
+   
+}
+svg{
+
+}
+
+@media (max-width:800px){
+    .section{
+        width: 95vw;
+    }
+}
