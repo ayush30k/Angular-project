@@ -1,0 +1,36 @@
+<h1 mat-dialog-title class="title">Contact Info</h1>
+<div mat-dialog-content class="content">
+    <div class="main">
+        <div class="greet">Hi Visitor !</div>
+        <div class="desc">
+            <div class="name">
+                <div>Name </div>
+                <div>E-Mail </div>
+                <div>Linkedin </div>
+                <div>Contact No. </div>
+            </div>
+              
+            <div class="dot">
+                    <div>:</div>
+                    <div>:</div>
+                    <div>:</div>
+                    <div>:</div>
+            </div>
+            <div class="details">
+                <div>{{data.name}}</div>
+                <div>{{data.email}}</div>
+               <a href={{data.link}} target="_blank"><div>Visit Linkedin profile here</div></a> 
+                <div>{{data.contact}}</div>
+            </div>
+        </div>
+        <div class="greet">Thank You </div>
+        
+    </div>
+<!-- <p>{{data.name}}</p>
+<p>{{data.email}}</p>
+<p>{{data.dob}}</p> -->
+
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button color="warn" class="btn" mat-dialog-close>Close</button>
+</div>

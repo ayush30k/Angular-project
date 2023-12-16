@@ -10,7 +10,11 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HeaderComponent } from './header/header.component';
-import {MatModule} from './AppModule/MatModule'
+import {MatModule} from './AppModule/MatModule';
+import { ContactPopupComponent } from './component/contact-popup/contact-popup.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 
 
@@ -25,12 +29,16 @@ import {MatModule} from './AppModule/MatModule'
     ResumeComponent,
     HeaderComponent,
     FooterComponent,
+    ContactPopupComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatModule
+    MatModule,
+
     
   ],
   providers: [],

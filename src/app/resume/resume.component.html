@@ -1,22 +1,17 @@
-    <div class="main">
-        <div class="resume-title"> 
-            <div class="view">
-                <a [href]="pdfSrc" download="AyushResume.pdf"> <button>Download Resume</button></a>
-            </div>
-           
-        </div>
+
+<div class="main">
+    <div class="box">
+        <a href="assets/newResumeAyush.pdf"  download="newResumeAyush.pdf">
+        <div class="resume-download" >
+            
+            <span id="user-name"> <i class="fa-solid fa-download"></i>  Download Resume </span> 
+        </div></a>
+        <h1>Resume Page is Under Construction Still you can Download Resume from Above button</h1>
+           <h2>
+            Thank you !
+           </h2>
+            <h2>
+                Developed and Managed By : AYUSH KUMAR
+            </h2>
     </div>
-
-
-
-<div class="pdfViewer" >
-    
-    <pdf-viewer  [src]="pdfSrc" [original-size]="true" *ngIf="originalSize>800"  ></pdf-viewer>
-    <pdf-viewer  [src]="pdfSrc" [original-size]="false" *ngIf="originalSize<800" ></pdf-viewer>
-
 </div>
-
-
-
-
-

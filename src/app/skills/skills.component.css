@@ -1,0 +1,72 @@
+/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
+.main{
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.box{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 80vw; /* Set the width as needed */
+height: auto; /* Set the height as needed */
+padding: 5px;
+background-color: #8b1bc7; /* Set the background color of the div */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+border-radius: 10px; /* Optionally, add rounded corners for a softer look */
+margin: 40px; /* Add margin to create space between elements */
+color: #e7d6f6;
+}
+.s-details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    padding: 5px;
+    text-align: center;
+    border: 3px solid #e7c1fc;
+    width: 160px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+table {
+    border: 4px solid #e1b0fc;
+    width: 100%;
+  }
+th{
+    background-color: #e7c1fc;
+    color: #8b1bc7;
+}
+.hover-row:hover {
+    background-color: #eccaff;
+   
+  }
+td{
+    color: #8b1bc7;
+}
+
+@media screen and (max-width:900px){
+    .box{
+        width: 95vw;
+    }
+    table {
+        border: 4px solid #e1b0fc;
+        width: 100%;
+      }
+      .s-details{
+        width: 90vw;
+      }
+
+      td.mat-column-level,
+      th.mat-header-cell.mat-column-level {
+        display: none;
+      }
+}
+  

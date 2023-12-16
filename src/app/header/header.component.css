@@ -1,26 +1,37 @@
+/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
 .example-spacer {
-    flex: 1 1 auto;
+    flex:auto;
   }
   .mat-list{
     min-width: 16vw;
    min-height:80.2vh;
-  
   }
+  #user-name{
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 15px;
+}
  .list-items{
   color: #e7d6f6;
  }
  .list-items:hover{
   background-color: #e7d6f6;
   color: #5B0888;
- }
-  mat-toolbar{
+}
+mat-toolbar{
     background-color: #5B0888;
     color: #e7d6f6;
-  }
-  mat-sidenav{
+}
+mat-sidenav{
     background-color: #5B0888;
-
-    
-  }
-  
+}
+a{
+    text-decoration: none;
+    color:#e7d6f6 ;
+}
+.download{
+  font-size: 14px;
+  border: 2px solid #e7d6f6;
+  border-radius: 20px;
+}
   

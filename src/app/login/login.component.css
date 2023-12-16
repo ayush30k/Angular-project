@@ -1,0 +1,28 @@
+
+    .main{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw; /* Set the width as needed */
+    height: auto; /* Set the height as needed */
+    padding: 5px;
+    background-color: #fff; /* Set the background color of the div */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    border-radius: 10px; /* Optionally, add rounded corners for a softer look */
+    margin: 40px; /* Add margin to create space between elements */
+}
+
+@media screen and (max-width:912px){
+    h1{
+        font-size: 16px;
+    }
+    h2{
+        text-align: center;
+    }
+}

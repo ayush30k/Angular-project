@@ -1,93 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
-.pdfViewer{
-  height: 150vh;
-  width: 80vw;
-  
-}
-.pdfViewer pdf-viewer{
-    height:150vh;
-}
+/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
 .main{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    padding: 5px;
-    
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
-.resume-title {
-    display: flex;
-    justify-content: space-around;
-    width: 30vw;
-    background-color: #f0f0f0; /* Background color of the div */
-    border: 1px solid #c0c0c0; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Box shadow for the raised effect */
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    padding: 15px;
-    
-  }
-  .resume-title button{
-    width: 10vw;
-    padding: 5px;
-    font-size: 16px;
-    font-weight: 400px;
-    font-family:'Fira Sans', sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
-    border:2px solid grey;
-    border-radius: 30px;
-    cursor: pointer;
-
-  }
-@media (max-width:800px) {
-    .pdfViewer{
-        height: 130vh;
-        width: 80vw;
-       
-    }
-    .pdfViewer pdf-viewer{
-        height:  100vh;
-        width: 90vw;
-    }
-    .main{
-        display: flex;
-        justify-content: center;
-        margin: 1px;
-    }
-    .resume-title{
-        font-size: 20px;
-        font-weight: 400;
-        padding: 2px;
-    }
-.resume-title {
-    width: 50vw;
-    height:auto ;
-    
+.box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80vw; /* Set the width as needed */
+height: auto; /* Set the height as needed */
+padding: 5px;
+background-color: #8b1bc7; /* Set the background color of the div */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+border-radius: 10px; /* Optionally, add rounded corners for a softer look */
+margin: 40px; /* Add margin to create space between elements */
+color: #e7d6f6;
 }
-  .resume-title button{
-    margin: 2px;
-    font-size: 10px;
-    border: 1px solid gray;
-    border-radius: 200px;
-    width: 30vw;
-  }
+.resume-download{
+  cursor: pointer;
+  border:3px solid white;
+  margin: 20px;
+  color: #e7d6f6;
+  width: 170px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+.resume-download:hover{
+  background-color:  #e7d6f6;
+  color: #8b1bc7 ;
+}
+a{
+  text-decoration: none;
 }
 
-
-.pdf-container {
-    width: 100%;
-    height: 100vh; /* 100% of the viewport height */
-    overflow: hidden; /* Hide any overflow outside the container */
-  }
-  
-  .pdf-container object {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .pdf-container embed {
-    width: 100%;
-    height: 100%;
-  }
+@media screen and (max-width:900px){
+h1{
+  text-align: center;
+  font-size: 16px;
+}
+h2{
+  text-align: center;
+}
+.box{
+  width: 90vw;
+}
+}

@@ -14,12 +14,46 @@ export class ProjectsComponent implements OnInit
  {
 
   constructor() { }
-
+  data?:Education[];
   ngOnInit(): void {
-    console.log(this.position);
-    console.log(this.compDetails);
-
+    this.data=this.education
   }
+     
+  durationConverter(StartDate:Date,EndDate:Date|null){
+
+    let cur_date=new Date();
+    if(EndDate!=null){
+      let years=EndDate.getFullYear()- StartDate.getFullYear();
+    let months=EndDate.getMonth() - StartDate.getMonth();
+    let total_months=years*12 +months;
+    let remainingYears = Math.floor(total_months / 12);
+    let  remainingMonths = total_months % 12;
+    if(remainingYears<1){
+      return ` ${remainingMonths} mos`
+    }
+    return `${remainingYears} Years, ${remainingMonths} mos`
+    }
+
+    let years=cur_date.getFullYear()- StartDate.getFullYear();
+    let months=cur_date.getMonth() - StartDate.getMonth();
+
+    let total_months=years*12 +months;
+
+    let remainingYears = Math.floor(total_months / 12);
+    let  remainingMonths = total_months % 12;
+
+    return `${remainingYears} Years, ${remainingMonths} mos`
+  }
+  TrainingStartDate: Date = new Date('2022-03-15');
+  trainingEnddate:Date= new Date('2022-09-28');
+  engineerStartDate:Date =new Date('2022-09-28')
+  nullDate:Date|null=null
+   
+  job_duration=this.durationConverter(this.engineerStartDate,this.nullDate);
+  training_duration=this.durationConverter(this.TrainingStartDate,this.trainingEnddate);
+  total_duration =this.durationConverter(this.TrainingStartDate,this.nullDate);
+  
+
   education:Education[]=[
     { 
       imgurl:"https://media.licdn.com/dms/image/C4E0BAQEjf2OL5gY0Qg/company-logo_100_100/0/1631025991325/gandhi_institute_for_technological_advancement_logo?e=1707350400&v=beta&t=QLNmLsuGUhMk6twp8SpiH6-uFYgCtSNs03FU9Pn-F3o",
@@ -44,11 +78,11 @@ export class ProjectsComponent implements OnInit
 
   ]
   position:Positions[]=[{desigination:"Project Engineer",
-  jobtype:"Full time",duration:"Sep 2022 - Present · 1 yr 3 mos",description:"",skills:"Java · Angular · Spring Boot · Snowflake"},
+  jobtype:"Full time",duration:"Sep 2022 - Present ·" +`${this.job_duration}`,description:"",skills:"Java · Angular · Spring Boot · Snowflake"},
   {desigination:"Velocity Trainee",
-  jobtype:"Apprenticeship",duration:"Mar 2022 - Sep 2022 · 7 mos",description:"Trainee at Wipro Velocity Program (Wipro Turbo)",skills:"Microservices · Java · Angular · Spring Boot"}]
+  jobtype:"Apprenticeship",duration:"Mar 2022 - Sep 2022 ·" +`${this.training_duration}`,description:"Trainee at Wipro Velocity Program (Wipro Turbo)",skills:"Microservices · Java · Angular · Spring Boot"}]
  compDetails:CompanyDetails[]=[
-  {cname:"Wipro",tenure:"1 Yr 9 mos",location:"Bengaluru, Karnataka, India",Positions:this.position},
+  {cname:"Wipro",tenure:this.total_duration,location:"Bengaluru, Karnataka, India",Positions:this.position},
   // {cname:"Wipro",tenure:"1 Yr 9 mos",location:"Bengaluru, Karnataka, India",Positions:this.position}
 
   ]
